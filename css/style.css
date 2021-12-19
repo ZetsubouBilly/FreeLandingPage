@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    /* line-height: 1.6; */
+    color: #000;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin: 20px 0;
+    background-color: #e5e5e5;
+}
+
+/*container
+===============*/
+
+.container {
+    width: 100%;
+    max-width: 944px;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+/*header
+===============*/
+
+
+
+.header__nav {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+}
+
+.nav__item {
+    font-size: 18px;
+    font-weight: 700;
+    color: #828282;
+    text-decoration: none;
+    transition: color .1s linear;
+   
+} 
+.nav__item:hover {
+        color: #000;
+ }
+
+
+/*Intro
+===============*/
+
+.intro__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro__name {
+    padding-top: 40px;
+    margin-bottom: 50px;
+    display: block;
+    width: 124px;
+    height: 118px;
+    font-size: 47px;
+    word-wrap: break-word;
+}
+
+.intro__prof {
+    padding-top: 95px;
+    /* margin-bottom: 25px; */
+    word-wrap: break-word;
+    width: 155px;
+    height: 44px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.intro__lang {
+    height: auto;
+    width: 68px;
+    position: relative; 
+    display: flex;   
+    align-items: flex-end;
+    /* transform:  rotate(-90deg); */
+    /* align-items: center; */
+    writing-mode: vertical-rl;
+}
+
+.btn__switch {
+
+    background: none;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #828282;
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.btn__switch:hover {
+    color: #000;
+}
+
+.btn__switch.active {
+    color: #000;
+}
+
+.intro__photo {
+    padding-top: 33px;
+    max-width: 940px;
+    margin-bottom: 104px;
+}
+#div-mobile {    display: none;  }
+
+/*About
+===============*/
+
+.about {
+    width: 100%;
+    background-color: #F6F6F6;
+
+}
+
+.about__title {
+    padding-top: 120px;
+    /* padding-bottom: 18px; */
+    text-align: center;
+    font-weight: 700;
+    font-size: 34px;
+    color: #000;
+}
+
+.about__text {
+    padding: 18px 480px 107px;
+    display: block;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+
+/*Skill
+===============*/
+
+.skills__title {
+    padding-top: 91px;
+    margin-bottom: 70px;
+
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+}
+
+.skills__text {
+    margin-bottom: 84px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.skills__icon {
+    padding: 0 127px 110px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*Portfolio
+===============*/
+
+.portfolio {
+    width: 100%;
+    height: auto;
+    background-color: #F6F6F6;
+}
+
+.portfolio__title {
+    padding-top: 113px;
+    margin-bottom: 47px;
+
+    text-align: center;
+
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+}
+
+.portfolio__img {
+    display: block;
+    margin: 0 auto 45px;
+}
+
+.portfolio__link {
+    margin-bottom: 100px;
+
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.portfolio__link:last-child {
+    padding-bottom: 100px;
+    margin-bottom: 0;
+}
+
+/*Portfolio
+===============*/
+
+.contact__title {
+    padding-top: 114px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    color: black;
+}
+
+.contact__text {
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    text-align: center;
+    font-weight: 500;
+}
+
+.button {
+    display: block;
+
+    margin: 0 auto 85px;
+    padding: 13px 30px;
+
+    content: "";
+    border: 0;
+    border-radius:20px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.contact__social {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact__link {
+    margin: 0 30px;
+    transition: transform .2s linear;
+}
+
+.contact__link:hover {
+    transform: translateY(-3px);
+}
+
+.like {
+    
+    color: #828282;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.like p {
+    margin-bottom: 0;
+}
+
+.like-me {
+    margin-bottom: 123px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.like-me__link {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.like-me__link:hover {
+    text-decoration: underline;
+    color: #828282;
+}
+
+
+/* Burger
+==================== */
+.burger {
+    display: block;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+
+    background-color: #000;
+
+    font-size: 0;
+    color: transparent;
+    
+
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: #000;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    top: -8px;
+}
+
+.burger__item:after {
+    bottom: -8px;
+}
+
+
+
+
+@media (max-width: 575px) {
+
+    #div-mobile {    display: block; padding-right: 20px; padding-left: 20px;}
+    .intro__photo {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #fff;
+        width: 100%;
+        height: 812px;
+        position: absolute;
+        left: 0;
+    }
+
+    .nav__item {
+        padding-top: 34px;
+        font-size: 34px;
+    }
+    .nav__item:first-child {
+        padding-top: 68px;
+    }
+
+    .intro__inner {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .intro__prof {
+        padding-top: 0;
+        margin-bottom: 33px;
+    }
+
+    
+
+    .intro__lang {
+        display: none;
+    }
+
+
+}
